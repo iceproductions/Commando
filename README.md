@@ -4,7 +4,8 @@
 [![Downloads](https://img.shields.io/npm/dt/discord.js-commando.svg)](https://www.npmjs.com/package/discord.js-commando)
 [![Version](https://img.shields.io/npm/v/discord.js-commando.svg)](https://www.npmjs.com/package/discord.js-commando)
 [![Dependency status](https://david-dm.org/discordjs/Commando.svg)](https://david-dm.org/discordjs/Commando)
-[![Build status](https://travis-ci.org/discordjs/Commando.svg)](https://travis-ci.org/discordjs/Commando)-->
+[![Build status](https://travis-ci.org/discordjs/Commando.svg)](https://travis-ci.org/discordjs/Commando)[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ficeproductions%2FCommando.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ficeproductions%2FCommando?ref=badge_shield)
+-->
 
 ## About
 
@@ -53,3 +54,7 @@ Not yet published to NPM
 No docs yet
 <!-- [View the docs here.](https://discord.js.org/#/docs/commando)  
 See the [discord.js documentation](https://discord.js.org/#/docs) as well. -->
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ficeproductions%2FCommando.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ficeproductions%2FCommando?ref=badge_large)
