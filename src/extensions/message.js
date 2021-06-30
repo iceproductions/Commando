@@ -1,8 +1,9 @@
-const { Structures, escapeMarkdown, splitMessage, resolveString } = require('discord.js');
+const { Structures, splitMessage } = require('discord.js');
 const { oneLine } = require('common-tags');
 const Command = require('../commands/base');
 const FriendlyError = require('../errors/friendly');
 const CommandFormatError = require('../errors/command-format');
+const { escapeMarkdown, resolveString } = require('../util');
 
 module.exports = Structures.extend('Message', Message => {
 	/**
