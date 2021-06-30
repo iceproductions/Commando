@@ -39,7 +39,7 @@
 	"peerDependencies": {
 		"@types/better-sqlite3": "^5.0.0",
 		"better-sqlite3": "^5.0.0",
-		"discord.js": "^13.0.0",
+		"discord.js": ">=13.0.0-dev.0",
 		"sqlite": "^3.0.0"
 	},
 	"engines": {
