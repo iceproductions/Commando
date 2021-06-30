@@ -1,8 +1,7 @@
 const path = require('path');
-const { escapeMarkdown } = require('discord.js');
 const { oneLine, stripIndents } = require('common-tags');
 const ArgumentCollector = require('./collector');
-const { permissions } = require('../util');
+const { permissions, escapeMarkdown } = require('../util');
 
 /** A command that can be run in a client */
 class Command {
