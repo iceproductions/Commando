@@ -307,6 +307,7 @@ module.exports = Structures.extend('Message', Message => {
 			}
 
 			content = resolveString(content);
+			if(!options) options = {};
 			options.content = content;
 
 			switch(type) {
