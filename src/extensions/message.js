@@ -307,20 +307,21 @@ module.exports = Structures.extend('Message', Message => {
 			}
 
 			content = resolveString(content);
+			options.content = content;
 
 			switch(type) {
 				case 'plain':
-					if(!shouldEdit) return this.channel.send(content, options);
+					if(!shouldEdit) return this.channel.send(options);
 					return this.editCurrentResponse(channelIDOrDM(this.channel), { type, content, options });
 				case 'reply':
-					if(!shouldEdit) return super.reply(content, options);
+					if(!shouldEdit) return super.reply(options);
 					if(options && options.split && !options.split.prepend) options.split.prepend = `${this.author}, `;
 					return this.editCurrentResponse(channelIDOrDM(this.channel), { type, content, options });
 				case 'direct':
-					if(!shouldEdit) return this.author.send(content, options);
+					if(!shouldEdit) return this.author.send(options);
 					return this.editCurrentResponse('dm', { type, content, options });
 				case 'code':
-					if(!shouldEdit) return this.channel.send(content, options);
+					if(!shouldEdit) return this.channel.send(options);
 					if(options && options.split) {
 						if(!options.split.prepend) options.split.prepend = `\`\`\`${lang || ''}\n`;
 						if(!options.split.append) options.split.append = '\n```';
