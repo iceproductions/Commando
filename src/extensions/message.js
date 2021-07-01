@@ -1,4 +1,4 @@
-const { Structures, splitMessage } = require('discord.js');
+const { Structures, splitMessage, MessageEmbed } = require('discord.js');
 const { oneLine } = require('common-tags');
 const Command = require('../commands/base');
 const FriendlyError = require('../errors/friendly');
@@ -308,7 +308,13 @@ module.exports = Structures.extend('Message', Message => {
 
 			content = resolveString(content);
 			if(!options) options = {};
-			options.content = content;
+			if(content) options.content = content;
+			if(options instanceof MessageEmbed) {
+				options = {
+					embeds: [options]
+				};
+			}
+			console.log('Response called with options', options);
 
 			switch(type) {
 				case 'plain':
