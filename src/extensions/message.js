@@ -314,7 +314,6 @@ module.exports = Structures.extend('Message', Message => {
 					embeds: [options]
 				};
 			}
-			console.log('Response called with options', options);
 
 			switch(type) {
 				case 'plain':
